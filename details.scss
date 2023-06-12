@@ -1,0 +1,39 @@
+@import 'defaults';
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conteudo-container {
+  .ratings {
+    color: $default-color;
+    padding: $default-padding;
+  }
+
+  .title {
+    color: $default-color
+  }
+  .price-container {
+    .old-price {
+      color: green;
+      text-decoration: line-through;
+    }
+  }
+  
+}
+
+.conteudo-container .stock {
+  color: $default-color;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.lista-sem-estilo {
+  @include reset-list;
+}
+
+.lista-com-estilo {
+  @include reset-list;
+}

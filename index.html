@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FakeStore Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">CoComerciante</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pesquisa.html">Pesquisa de Produto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="">
+    <section class="">
+      <div class="banner">
+        <div class="headline-wrapper">
+          <p class="headline">CoComerciante</p>
+          <p class="sub-headline">Marcus Vinicius</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row mb-3 mt-3">
+        <!-- Filtro de Preços -->
+        <div class="col-md-6">
+          <select id="priceFilter" class="form-control">
+            <option value="">Filtrar por preços</option>
+            <option value="0-1000">0-1000</option>
+            <option value="1001-2000">1001-2000</option>
+            <option value="2000+">2000+</option>
+          </select>
+        </div>
+
+        <!-- Filtro de Categorias -->
+        <div class="col-md-6">
+          <select id="categoryFilter" class="form-control">
+            <option value="">Buscar na API por categoria</option>
+            <!-- Categorias serão carregadas aqui -->
+          </select>
+        </div>
+      </div>
+
+      <div class="row" id="products">
+        <!-- Cards e Skeletons serão adicionados aqui -->
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="app.js"></script>
+  <script src="filters.js"></script>
+</body>
+
+</html>

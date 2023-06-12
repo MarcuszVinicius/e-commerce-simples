@@ -1,0 +1,33 @@
+.custom-container {
+    background-color: #ffffff;
+  }
+  
+  .conteudo-container .ratings {
+    color: red;
+    padding: 10px;
+  }
+  .conteudo-container .title {
+    color: red;
+  }
+  .conteudo-container .price-container .old-price {
+    color: green;
+    text-decoration: line-through;
+  }
+  
+  .conteudo-container .stock {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .lista-sem-estilo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .lista-com-estilo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }/*# sourceMappingURL=details.css.map */
